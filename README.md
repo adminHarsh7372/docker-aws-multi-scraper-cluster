@@ -3,7 +3,9 @@
 A simple **parallel web scraping infrastructure** using Docker containers, deployable on **AWS EC2 Free Tier**.  
 This project demonstrates **scalability, containerization, and cloud deployment**
 
+
 ---
+
 
 ## ⚡ Project Overview
 
@@ -18,7 +20,9 @@ All scrapers share a **host-mounted `data/results/` folder** where results are s
 
 Each scraper runs in its **own Docker container**, making it **parallel, scalable, and cloud-ready**.
 
+
 ---
+
 
 ## 🧩 Architecture Diagram
 
@@ -40,7 +44,9 @@ Each scraper runs in its **own Docker container**, making it **parallel, scalabl
      │             └───────────┘
      └──────────────────────────────┘
 
+
 ---
+
 
 ## 🗂️ Folder Structure
 
@@ -61,7 +67,9 @@ docker-aws-multi-scraper-cluster/
 │ └── results/
 └── docker-compose.yml
 
+
 ---
+
 
 ## 🚀 Running Locally
 
@@ -86,6 +94,10 @@ Each JSON file contains:
   "url": "https://www.python.org",
   "title": "Welcome to Python.org"
 }
+
+
+---
+
 
 
 ## ☁️ Deploying to AWS EC2 (Free Tier)
@@ -119,6 +131,9 @@ ls data/results/
 cat data/results/scraper1.json
 
 
+---
+
+
 ## 📦 How it Works
 Docker Containers: Each scraper runs in its own isolated container.
 
@@ -135,6 +150,9 @@ Containerized scraping workflows
 Parallel and scalable scraper execution
 
 AWS Cloud deployment using Free Tier
+
+
+---
 
 
 ## 🏷️ Tech Stack
