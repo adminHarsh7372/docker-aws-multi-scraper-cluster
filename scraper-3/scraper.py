@@ -1,7 +1,7 @@
 import requests, os, re, json
 
 url = "https://www.python.org"
-print(f"[scraper3] Fetching: {url}")
+print(f"[scraper-3] Fetching: {url}")
 
 try:
     r = requests.get(url, timeout=10, headers={"User-Agent": "Scraper3/1.0"})
@@ -11,7 +11,7 @@ except Exception as e:
     title = f"Error: {e}"
 
 os.makedirs("/data/results", exist_ok=True)
-with open("/data/results/scraper3.json", "w") as f:
+with open("/data/results/scraper-3.json", "w") as f:
     json.dump({"url": url, "title": title}, f, indent=2)
 
-print(f"[scraper3] Done! Title: {title}")
+print(f"[scraper-3] Done! Title: {title}")
