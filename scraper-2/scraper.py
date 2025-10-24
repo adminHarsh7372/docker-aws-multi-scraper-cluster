@@ -1,7 +1,7 @@
 import requests, os, re, json
 
 url = "https://www.wikipedia.org"
-print(f"[scraper2] Fetching: {url}")
+print(f"[scraper-2] Fetching: {url}")
 
 try:
     r = requests.get(url, timeout=10, headers={"User-Agent": "Scraper2/1.0"})
