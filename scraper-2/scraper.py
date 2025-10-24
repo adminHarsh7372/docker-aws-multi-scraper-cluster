@@ -11,7 +11,7 @@ except Exception as e:
     title = f"Error: {e}"
 
 os.makedirs("/data/results", exist_ok=True)
-with open("/data/results/scraper2.json", "w") as f:
+with open("/data/results/scraper-2.json", "w") as f:
     json.dump({"url": url, "title": title}, f, indent=2)
 
-print(f"[scraper2] Done! Title: {title}")
+print(f"[scraper-2] Done! Title: {title}")
