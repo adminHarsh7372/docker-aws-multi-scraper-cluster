@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  scraper1:
+    build: ./scraper - 1
+    container_name: scraper1
+    volumes:
+      - ./data:/data
+
+  scraper2:
+    build: ./scraper2
+    container_name: scraper2
+    volumes:
+      - ./data:/data
+
+  scraper3:
+    build: ./scraper3
+    container_name: scraper3
+    volumes:
+      - ./data:/data
