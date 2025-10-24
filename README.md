@@ -111,19 +111,17 @@ ssh -i your-key.pem ubuntu@YOUR_EC2_IP
 
 ##Install Docker & Compose:
 
-sudo apt update && sudo apt install -y docker.io docker-compose-plugin
+sudo apt update && sudo apt install -y 
+docker.io docker-compose-plugin
 sudo systemctl enable docker
 sudo usermod -aG docker $USER
-newgrp docker
 
 
 Clone the repository:
 git clone https://github.com/adminHarsh7372/docker-aws-multi-scraper-cluster.git
 cd docker-aws-multi-scraper-cluster
-mkdir -p data/results
 
 Run scrapers:
-
 docker compose up --build
 View results:
 
