@@ -109,7 +109,9 @@ Connect via SSH:
 
 ssh -i your-key.pem ubuntu@YOUR_EC2_IP
 
-##Install Docker & Compose:
+---
+
+## Install Docker & Compose:
 
 sudo apt update && sudo apt install -y 
 docker.io docker-compose-plugin
