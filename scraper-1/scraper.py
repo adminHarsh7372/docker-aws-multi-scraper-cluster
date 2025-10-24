@@ -1,7 +1,7 @@
 import requests, os, re, json
 
 url = "https://example.com"
-print(f"[scraper1] Fetching: {url}")
+print(f"[scraper-1] Fetching: {url}")
 
 try:
     r = requests.get(url, timeout=10, headers={"User-Agent": "Scraper1/1.0"})
